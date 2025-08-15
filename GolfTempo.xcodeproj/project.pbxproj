@@ -12,6 +12,11 @@
 		C24A5B2A2E162EC500E49E09 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24A5B292E162EC500E49E09 /* Item.swift */; };
 		C24A5B2C2E162EC700E49E09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C24A5B2B2E162EC700E49E09 /* Assets.xcassets */; };
 		C24A5B302E162EC700E49E09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C24A5B2F2E162EC700E49E09 /* Preview Assets.xcassets */; };
+		C276CB652E28C5D6006DC49D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C276CB642E28C5D6006DC49D /* Launch Screen.storyboard */; };
+		C27B32662E263FC8009B50AB /* champion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C27B32632E263FC7009B50AB /* champion.mp3 */; };
+		C27B32672E263FC8009B50AB /* practice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C27B32642E263FC7009B50AB /* practice.mp3 */; };
+		C27B32692E264249009B50AB /* long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C27B32682E264249009B50AB /* long.mp3 */; };
+		C29176CA2E3CBE0100DC2478 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29176C92E3CBE0100DC2478 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,12 @@
 		C24A5B2B2E162EC700E49E09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C24A5B2D2E162EC700E49E09 /* GolfTempo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GolfTempo.entitlements; sourceTree = "<group>"; };
 		C24A5B2F2E162EC700E49E09 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C276CB642E28C5D6006DC49D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C27B32632E263FC7009B50AB /* champion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = champion.mp3; sourceTree = "<group>"; };
+		C27B32642E263FC7009B50AB /* practice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = practice.mp3; sourceTree = "<group>"; };
+		C27B32682E264249009B50AB /* long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = long.mp3; sourceTree = "<group>"; };
+		C29176C82E28DB8400DC2478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C29176C92E3CBE0100DC2478 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +65,16 @@
 		C24A5B242E162EC500E49E09 /* GolfTempo */ = {
 			isa = PBXGroup;
 			children = (
+				C29176C82E28DB8400DC2478 /* Info.plist */,
+				C27B32612E263FC7009B50AB /* Sound */,
 				C24A5B252E162EC500E49E09 /* GolfTempoApp.swift */,
 				C24A5B272E162EC500E49E09 /* ContentView.swift */,
+				C29176C92E3CBE0100DC2478 /* InfoView.swift */,
 				C24A5B292E162EC500E49E09 /* Item.swift */,
 				C24A5B2B2E162EC700E49E09 /* Assets.xcassets */,
 				C24A5B2D2E162EC700E49E09 /* GolfTempo.entitlements */,
 				C24A5B2E2E162EC700E49E09 /* Preview Content */,
+				C276CB642E28C5D6006DC49D /* Launch Screen.storyboard */,
 			);
 			path = GolfTempo;
 			sourceTree = "<group>";
@@ -70,6 +85,16 @@
 				C24A5B2F2E162EC700E49E09 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C27B32612E263FC7009B50AB /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				C27B32682E264249009B50AB /* long.mp3 */,
+				C27B32632E263FC7009B50AB /* champion.mp3 */,
+				C27B32642E263FC7009B50AB /* practice.mp3 */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,8 +155,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C276CB652E28C5D6006DC49D /* Launch Screen.storyboard in Resources */,
 				C24A5B302E162EC700E49E09 /* Preview Assets.xcassets in Resources */,
+				C27B32662E263FC8009B50AB /* champion.mp3 in Resources */,
+				C27B32692E264249009B50AB /* long.mp3 in Resources */,
 				C24A5B2C2E162EC700E49E09 /* Assets.xcassets in Resources */,
+				C27B32672E263FC8009B50AB /* practice.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C29176CA2E3CBE0100DC2478 /* InfoView.swift in Sources */,
 				C24A5B282E162EC500E49E09 /* ContentView.swift in Sources */,
 				C24A5B2A2E162EC500E49E09 /* Item.swift in Sources */,
 				C24A5B262E162EC500E49E09 /* GolfTempoApp.swift in Sources */,
@@ -271,19 +301,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GolfTempo/GolfTempo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GolfTempo/Preview Content\"";
-				DEVELOPMENT_TEAM = 9VK3HS3NQ2;
+				DEVELOPMENT_TEAM = D9F697SXZ6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GolfTempo/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -295,6 +328,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.golftempo.GolfTempo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -309,19 +343,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = GolfTempo/GolfTempo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GolfTempo/Preview Content\"";
-				DEVELOPMENT_TEAM = 9VK3HS3NQ2;
+				DEVELOPMENT_TEAM = D9F697SXZ6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GolfTempo/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -333,6 +370,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.golftempo.GolfTempo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
